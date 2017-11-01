@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class rutaCorta 
+{
+	Stack W;
+	Stack V;
+	Grafo E = new Grafo(7);
+	
+	ListaLados curr;
+	
+	while (!W.containsAll(V))
+	{
+		for (int i = 0; i< 7; i++)
+		{
+			while (curr!= null)
+			{
+				curr = E.adjlist[i];
+				curr = curr.next;
+			}
+		}
+	}
+}
